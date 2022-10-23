@@ -1,0 +1,126 @@
+.container {
+    padding: 16px;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-flow: row wrap;
+    width: 500px;
+    justify-content: space-around;
+    font-size: small;
+}
+
+header h1, 
+header div p {
+    margin: 0;
+}
+
+header div a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.filters {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.filters a {
+    text-decoration: none;
+    padding: 8px;
+    color: #000;
+    border-radius: 6px;
+    font-size: small;
+    line-height: 2;
+}
+
+.filters a.selected {
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+.filters a.filter-popular {
+    border: 2px solid pink;
+}
+
+.filters a.filter-btn-filters {
+    border: 1px solid lightgray;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards .card-item {
+    padding-top: 32px;
+}
+.cards .card-item img {
+    max-width: 216px;
+} 
+
+.cards .card-item .card-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-item .card-footer .card-author{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.card-footer .card-author img {
+    border-radius: 8px;
+    max-width: 16px;
+    max-height: 16px;
+    padding: 0;
+}
+.card-footer {
+    font-size: 10px;
+    font-weight: bold;
+}
+.card-item img {
+    border-radius: 6px;
+}
+.card-footer .card-author > * {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.card-footer .card-author p {
+    margin: 0;   
+}
+.card-footer .card-author-label {
+    color: #fff;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: bolder;
+    background-color: lightgray;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+.card-footer .card-author-label:empty {
+    display: none;
+}
+.card-footer span i {
+    color: lightgray;
+    margin-right: 2px;
+}
